@@ -1,7 +1,3 @@
-import 'package:fatec_flutter_project/components.dart';
-import 'package:fatec_flutter_project/exercise_1.dart';
-import 'package:fatec_flutter_project/exercise_1_teacher.dart';
-import 'package:fatec_flutter_project/exercise_2.dart';
 import 'package:flutter/material.dart';
 
 class ListExercises extends StatelessWidget {
@@ -17,39 +13,33 @@ class ListExercises extends StatelessWidget {
         children: [
           TextButton(
             onPressed: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => const Components()),
-              );
+              Navigator.pushNamed(context, '/components');
             },
             child: const Text('Components'),
           ),
           TextButton(
             onPressed: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => const Exercise1()),
-              );
+              Navigator.pushNamed(context, '/exercise_1');
             },
             child: const Text('Exercise 1'),
           ),
           TextButton(
             onPressed: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => const Exercise1Teacher()),
-              );
+              Navigator.pushNamed(context, '/exercise_1_teacher');
             },
             child: const Text('Exercise 1 - Teacher'),
           ),
           TextButton(
             onPressed: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => const Exercise2()),
-              );
+              Navigator.pushNamed(context, '/exercise_2');
             },
             child: const Text('Exercise 2'),
+          ),
+          TextButton(
+            onPressed: () {
+              Navigator.pushNamed(context, '/screen_change');
+            },
+            child: const Text('Screen Change Example'),
           ),
         ],
       ),
