@@ -41,6 +41,18 @@ class ListExercises extends StatelessWidget {
             },
             child: const Text('Screen Change Example'),
           ),
+          TextButton(
+            onPressed: () {
+              Navigator.pushNamed(context, '/login_page');
+            },
+            child: const Text('Login Page'),
+          ),
+          TextButton(
+            onPressed: () {
+              Navigator.pushNamed(context, '/main_app_contacts');
+            },
+            child: const Text('Contacts App'),
+          ),
         ],
       ),
     );

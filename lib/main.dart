@@ -1,13 +1,17 @@
-import 'package:fatec_flutter_project/components.dart';
-import 'package:fatec_flutter_project/exercise_1.dart';
-import 'package:fatec_flutter_project/exercise_1_teacher.dart';
-import 'package:fatec_flutter_project/exercise_2.dart';
-import 'package:fatec_flutter_project/list_exercises.dart';
-import 'package:fatec_flutter_project/view/screen_change/screen_2_view.dart';
-import 'package:fatec_flutter_project/view/screen_change/screen_3_view.dart';
-import 'package:fatec_flutter_project/view/screen_change/screen_4_view.dart';
-import 'package:fatec_flutter_project/view/screen_change/screen_change_view.dart';
 import 'package:flutter/material.dart';
+
+import 'components.dart';
+import 'contacts_app/view/details_view.dart';
+import 'contacts_app/view/main_view.dart';
+import 'exercise_1.dart';
+import 'exercise_1_teacher.dart';
+import 'exercise_2.dart';
+import 'list_exercises.dart';
+import 'login_page/main.dart';
+import 'screen_change/view/screen_2_view.dart';
+import 'screen_change/view/screen_3_view.dart';
+import 'screen_change/view/screen_4_view.dart';
+import 'screen_change/view/screen_change_view.dart';
 
 void main() {
   runApp(const MainApp());
@@ -37,6 +41,9 @@ class MainApp extends StatelessWidget {
         '/screen_2_view': (context) => const Screen2View(),
         '/screen_3_view': (context) => const Screen3View(),
         '/screen_4_view': (context) => const Screen4View(),
+        '/login_page': (context) => const Main(),
+        '/main_app_contacts': (context) => const MainViewApp(),
+        '/details': (context) => const DetailsView()
       },
     );
   }

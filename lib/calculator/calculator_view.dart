@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'components/custom_text_form_field.dart';
+import '../components/custom_text_form_field.dart';
 import 'components/operations_buttons.dart';
 
 class CalculatorView extends StatefulWidget {
